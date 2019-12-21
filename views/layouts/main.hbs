@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Passport Test</title>
+    <link rel="stylesheet" href="/style.css" type="text/css">
+</head>
+
+<body>
+    <div class="pageWrapper">
+        <div class="siteHeader">
+			<h3>Passport Test App</h3>
+			<a href="/">Home</a>
+			<span>&nbsp; - &nbsp;</span>
+			<a href="/member">Member Page</a>
+			<span>&nbsp; - &nbsp;</span>
+
+			{{#if isLoggedIn}}
+				<a href="/logout">Logout</a>
+			{{else}}
+				<a href="/login">Login</a>
+				<span>&nbsp; - &nbsp;</span>
+				<a href="/register">Register</a>
+			{{/if}}
+		</div>
+		<div class="page-content">
+			{{{body}}}
+		</div>
+		<div class="footer">
+			{{> footer}}
+		</div>
+    </div>
+</body>
+
+</html>

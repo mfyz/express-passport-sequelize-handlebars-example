@@ -1,0 +1,40 @@
+body,
+input,
+textarea {
+	font-size: 16px;
+}
+
+body {
+	font-family: Helvetica, Sans-serif;
+	line-height: 35px;
+}
+
+.pageWrapper {
+	width: 500px;
+	margin: 50px auto;
+}
+
+.siteHeader {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+
+form input[type='text'],
+form input[type='password'] {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+form .error {
+	padding: 10px;
+	background-color: #FFE8E4;
+	border: 1px solid #ff0000;
+	margin-bottom: 20px;
+}
+
+.footer {
+	margin-top: 50px;
+	padding-top: 20px;
+	border-top: 1px solid #efefef;
+}

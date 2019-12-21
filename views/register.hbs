@@ -1,0 +1,22 @@
+<h1>Register</h1>
+<form method="post">
+	<input type="hidden" name="_csrf" value="{{csrfToken}}" />
+	
+	{{#if hasError}}
+		<div class="error">{{error}}</div>
+	{{/if}}
+
+	<label for="email">E-mail</label>
+	<input id="email" type="text" name="email" value="{{form.email}}" />
+	
+	<label for="username">Username</label>
+	<input id="username" type="text" name="username" value="{{form.username}}" />
+	
+	<label for="password">Password</label>
+	<input id="password" type="password" name="password" />
+	
+	<label for="password2">Re-type Password</label>
+	<input id="password2" type="password" name="password2" />
+
+	<button type="submit">Register</button>
+</form>

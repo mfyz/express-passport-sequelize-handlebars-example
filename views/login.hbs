@@ -1,0 +1,16 @@
+<h1>Login</h1>
+<form method="post">
+	<input type="hidden" name="_csrf" value="{{csrfToken}}" />
+
+	{{#if hasError}}
+		<div class="error">{{error}}</div>
+	{{/if}}
+
+	<label for="username">Username</label>
+	<input id="username" type="text" name="username" value="{{form.username}}" />
+
+	<label for="password">Password</label>
+	<input id="password" type="password" name="password" />
+
+	<button type="submit">Login</button>
+</form>
